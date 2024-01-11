@@ -57,7 +57,7 @@ export function ShowTodoList() {
     }
 
     function handleDelete(e) { // added
-        axios.delete(`http://localhost:8000/api/todo/${e.target.name}`);
+        axios.delete(`https://to-do-list-production-7c82.up.railway.app/api/todo/${e.target.name}`);
 
         setTodo((data) => {
             return data.filter((todo) => todo._id !== e.target.name);
