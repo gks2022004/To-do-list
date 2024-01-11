@@ -34,7 +34,7 @@ export function ShowTodoList() {
     useEffect(
         function () {
             axios
-                .get("http://localhost:8000/api/todo")
+                .get("https://to-do-list-production-7c82.up.railway.app/api/todo")
                 .then((res) => {
                     console.log(res.data);
                     setTodo(res.data);

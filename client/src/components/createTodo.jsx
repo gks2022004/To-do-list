@@ -14,7 +14,7 @@ export function CreateTodo() {
         e.preventDefault();
 
         axios
-            .post("http://localhost:8000/api/todo", data)
+            .post("https://to-do-list-production-7c82.up.railway.app/api/todo", data)
             .then((res) => {
                 setData({ title: "", description: "" });
                 console.log(res.data.message);
